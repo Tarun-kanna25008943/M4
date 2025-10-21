@@ -118,8 +118,7 @@ int main() {
 }
 ```
 ## OUTPUT
-
-
+<img width="687" height="133" alt="image" src="https://github.com/user-attachments/assets/f8f1f291-d047-4843-b839-fa4cd4134fdd" />
 
 
 ## RESULT
