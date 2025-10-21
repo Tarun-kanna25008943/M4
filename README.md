@@ -10,25 +10,27 @@ To write a C Program to perform the basic left shift operation for 44 integer nu
 5.	Stop the program.
 
 ## PROGRAM
+```
+#include <stdio.h>
 
+int main()
+{
+    int a = 44;  
+    int shifts = 3;  
+
+    int result = a << shifts;
+    
+    printf("Result after shifting %d left by %d positions: %d\n", a, shifts, result);
+
+    return 0;
+}
+```
 ## OUTPUT
-
-
-
-
-
-
-
+<img width="682" height="125" alt="image" src="https://github.com/user-attachments/assets/56442e3f-e57e-42aa-8fb1-957cc4bb8293" />
 
 
 ## RESULT
 Thus the program to perform the basic left shift operation for 44 integer number with 3 shifts has been executed successfully.
-
-
-
-
- 
- 
 
 
 # EX-17-TWO-NUMBERS-ARE-EQUAL-OR-NOT
@@ -47,14 +49,37 @@ Write a C Program to check whether the two numbers are equal or not using simple
 5.	Stop the program.
 
 ## PROGRAM
+```
+#include <stdio.h>
 
+int main() 
+{
+    int num1, num2;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &num1, &num2);
+
+    if (num1 == num2)
+	{
+        printf("Both numbers are equal.\n");
+    }
+    else 
+	{
+        printf("Both numbers are not equal.\n");
+    }
+
+    return 0;
+}
+```
 
 ## OUTPUT
+
+<img width="667" height="154" alt="image" src="https://github.com/user-attachments/assets/e501ac2a-cde2-4c10-b036-52854c871089" />
+
            
 ## RESULT
 
 Thus the program to check whether the two numbers are equal or not using simple if statement has been executed successfully
- 
  
 
 
@@ -70,7 +95,28 @@ Write a C Program to convert the given string into lowercase.
 5.	Stop the program.
 
 ## PROGRAM
+```
+#include <stdio.h>
+#include <ctype.h>
 
+int main() {
+    char str[100];
+    int i = 0;
+
+    printf("Enter a string: ");
+    scanf("%s",str);
+    
+    while (str[i]) 
+	{
+        str[i] = tolower(str[i]);
+        i++;
+    }
+
+    printf("Lowercase string: %s", str);
+
+    return 0;
+}
+```
 ## OUTPUT
 
 
